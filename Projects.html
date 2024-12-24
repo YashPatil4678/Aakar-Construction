@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakar Construction | Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            position: relative;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            background-color: rgba(0, 0, 0, 0.897);
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 18px;
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .menu a:hover {
+            color: #ffa500;
+        }
+
+        .btn-custom {
+            background-color: #ffa500;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #181716;
+        }
+
+        
+    /* Construction Section */
+    .construction-section {
+        font-family: Arial, sans-serif;
+        margin: 50px auto;
+        padding: 20px;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px; /* Spacing between elements */
+    }
+
+    .construction-section h2 {
+         font-size: 36px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: -19px;
+        margin-top: 29px;
+        }
+    
+
+    .highlight {
+        color: #ffa500;
+    }
+
+    .description {
+        font-size: 16px;
+        color: #666;
+        margin: 0 10px;
+        max-width: 800px;
+    }
+
+    .tabs {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the buttons */
+    }
+
+    .tab {
+        padding: 10px 20px;
+        font-size: 14px;
+        color: #000;
+        border: none;
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .tab:hover {
+        background-color: #ff9100;
+        color: #fff;
+    }
+
+    .tab.gallery:hover {
+        background-color: #ff9100;
+    }
+       
+        
+.gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        gap: 20px; /* Adds gap between items */
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .gallery-item {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%; /* Maintains aspect ratio */
+        display: block;
+    }
+
+    /* Hover effect */
+    .gallery-item:hover {
+        transform: scale(1.05); /* Slight zoom */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Emphasized shadow */
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #ffffff; /* Background color */
+    }
+        .form-section {
+            display: flex;
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .form-left {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-left h1 {
+            margin-left: 48px;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .form-left h1 span {
+            color: #ffc107; /* Yellow color for emphasis */
+        }
+
+        .form-left img {
+            width: 100%;
+            height: auto;
+        }
+
+        .form-right {
+            flex: 1;
+            padding: 40px;
+            background-color: #b1a7a742;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-right h2 {
+            margin-left: 84px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ffc107;
+        }
+
+        .form-right form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-right input,
+        .form-right select,
+        .form-right textarea {
+            background-color: #1a1a1a;
+            color: #fff;
+            border: 1px solid #444;
+            border-radius: 5px;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        .form-right textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .form-right button {
+            background-color: #ffc107;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-right button:hover {
+            background-color: #e0a806;
+        }
+
+        .form-right .note {
+            font-size: 12px;
+            color: #bbb;
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .form-section {
+                flex-direction: column;
+            }
+
+            .form-left, .form-right {
+                padding: 20px;
+            }
+        }
+
+        /* footer Section starts */
+        .footer {
+        background-color: #000;
+        padding: 40px 20px;
+        color: #fff;
+        }
+
+        .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        }
+
+        /* Logo Section */
+        .footer-logo {
+        flex: 1;
+        margin: 20px;
+        }
+
+        .footer-logo h2 {
+        font-size: 24px;
+        color: #fdb913;
+        }
+
+        .footer-logo span {
+        color: #fff;
+        }
+
+        .footer-logo p {
+        margin-top: 10px;
+        line-height: 1.6;
+        color: #aaa;
+        }
+
+        /* Contact Section */
+        .footer-contact {
+        flex: 1;
+        margin: 20px;
+        }
+
+        .footer-contact h3 {
+        color: #fdb913;
+        }
+
+        .footer-contact p {
+        margin: 10px 0;
+        color: #fff;
+        }
+
+        .footer-contact .app-links img {
+        width: 120px;
+        margin-right: 10px;
+        margin-top: 10px;
+        }
+
+        /* Social Media Section */
+        .footer-social {
+        
+            margin-right: 115px;
+            margin-left: 517px;
+            border-top: 1px solid #333;
+        }
+
+        .footer-social h3 {
+        color: #fdb913;
+        margin-bottom: 10px;
+            margin-left: 22px;
+        }
+
+        .footer-social .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+        }
+
+        .footer-social .social-icons i {
+        font-size: 22px;
+        color: #ffffff;
+        cursor: pointer;
+        }
+
+        .footer-social .social-icons i:hover {
+        color: #ec7710;
+        }
+
+        /* Links Section */
+        .footer-links {
+        display: flex;
+        flex: 2;
+        margin: 20px;
+        justify-content: space-around;
+        }
+
+        .footer-links h3 {
+        color: #fdb913;
+        margin-bottom: 10px;
+        }
+
+        .footer-links ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        .footer-links ul li {
+        margin: 5px 0;
+        color: #aaa;
+        }
+
+        /* Footer Bottom */
+        .container4 {
+        margin-top: 20px;
+        padding-top: 10px;
+        }
+        .footer::before {
+            content: "Aakar Constructions";
+            font-size: 5rem;
+            color: rgba(116, 113, 113, 0.281); /* Light gray for background text */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            white-space: nowrap;
+            font-weight: 700;
+            margin-top: -756px;
+        }
+        .banner-image {
+                    position: relative;
+                    text-align: center;
+                    color: white;
+                    height: 290px; /* Adjusted height */
+                    overflow: hidden;
+                }
+
+                .banner-image img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    filter: grayscale(100%) brightness(50%); /* Apply black and white effect with reduced brightness */
+                    display: block;
+                }
+
+                .banner-text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    color: white;
+                    font-family: Arial, sans-serif;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                }
+
+                .banner-text h1 {
+                    font-size: 2.8rem; /* Adjust heading font size */
+                    font-weight: bold;
+                    margin-bottom: 15px; /* Space between heading and paragraph */
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+                }
+
+                .banner-text p {
+                    font-size: 1.2rem; /* Slightly larger font for better readability */
+                    line-height: 1.6; /* Adjust line spacing */
+                    margin: 0 auto; /* Center the paragraph */
+                    max-width: 600px; /* Restrict paragraph width */
+                    text-align: center; /* Align text centrally */
+                    color: #ffffff; /* White text */
+                    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+                }
+
+    </style>
+</head>
+
+<body>
+    <!-- Nav Bar Starts -->
+    <header>
+        <div class="logo">AAKAR CONSTRUCTION</div>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Projects.html" style="color:  #ff9100;">Projects</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" class="btn-custom">Get Construction Estimate</a>
+        </nav>
+    </header>
+    <!-- Nav Bar Ends -->
+    <!-- Banner Image Starts -->
+    <div class="banner-image">
+        <img src="./con.jpeg" alt="Connect with Aakar Construction" />
+        <div class="banner-text">
+            <h1>Our Construction <span style="color: #ffa500;">Projects</span></h1>
+            <p>
+                Explore how our work has changed the life of our customers.
+            </p>
+    
+        </div>
+    </div>
+    <!-- Banner Image Ends -->
+
+    <!-- Construction Section Starts -->
+    <div class="construction-section">
+        
+        <div class="tabs">
+            <button class="tab">Completed</button>
+            <button class="tab">Near Completion</button>
+            <button class="tab">Active</button>
+            <button class="tab gallery1">Gallery</button>
+        </div>
+    </div>
+    <!-- Construction Section Ends -->
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="./p1.jpg" alt="Construction Project 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./p2.jpg" alt="Construction Project 2">
+        </div>
+        <div class="gallery-item">
+            <img src="./p3.jpg" alt="Construction Project 3">
+        </div>
+        <div class="gallery-item">
+            <img src="./p4.jpg" alt="Construction Project 4">
+        </div>
+        <div class="gallery-item">
+            <img src="./p5.jpg" alt="Construction Project 5">
+        </div>
+        <div class="gallery-item">
+            <img src="./p6.jpg" alt="Construction Project 6">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-section">
+            <!-- Left Section -->
+            <div class="form-left">
+                <h1 style="color: white;">Talk To <span>Our Expert</span></h1>
+                <img src="./t1.png" alt="Experts Illustration">
+            </div>
+            <!-- Right Section -->
+            <div class="form-right">
+                <h2>Connect With Expert</h2>
+                <form>
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Enter Your Email" required>
+                    <input type="tel" placeholder="Enter Your Phone Number" required>
+                    <select required>
+                        <option value="" disabled selected>Your City</option>
+                        <option value="City1">City 1</option>
+                        <option value="City2">City 2</option>
+                        <option value="City3">City 3</option>
+                    </select>
+                    <textarea placeholder="Why Do You Want To Partner With Us"></textarea>
+                    <div class="note">
+                        *By submitting this form, I confirm that I have read and agreed to accept Thinkedaar.com's privacy
+                        policy.
+                    </div>
+                    <button type="submit">Join Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer Section starts -->
+    <footer class="footer bg-dark" style="margin-top: 15px;">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <h2>Aakar<span>.Constructions</span></h2>
+                <p>Building Homes Simplified</p>
+                <p>
+                    At Aakar Construction, we blend functionality and aesthetics to deliver customized and efficient home
+                    construction,
+                    creating personalized spaces tailored to your lifestyle.
+                </p>
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-contact">
+                <h3>Get In Touch</h3>
+                <p><i class="fas fa-phone-alt"></i> +91-9191919191</p>
+                <p><i class="fas fa-envelope"></i> hello@Aakar.com</p>
+                <div class="app-links">
+                    <img src="images/app-store.png" alt="App Store" />
+                    <img src="images/google-play.png" alt="Google Play" />
+                </div>
+            </div>
+    
+            <!-- Links Section -->
+            <div class="footer-links">
+                <div>
+                    <h3>Home</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Why Us</li>
+                        <li>Our Projects</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div style="margin-left: 29px;">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Residential Construction</li>
+                        <li>Commercial Construction</li>
+                        <li>Maintenance</li>
+                        <li>Interiors</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Information</h3>
+                    <ul>
+                        <li>Terms & Condition</li>
+                        <li>Privacy Policy</li>
+                        <li>Cancellation Policy</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container4 text-center">
+            <p style="color: white;">&copy; 2024 Aakar Construction. All Rights Reserved.</p>
+            <h6>Designed By <span style="color: #00f7ff;">@ Yash Patil</span></h6>
+        </div>
+    </footer>
+    <!-- footer Section ends -->
+</body>
+
+</html>

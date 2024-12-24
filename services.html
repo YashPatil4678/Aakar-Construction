@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakar Construction |  Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .menu a:hover {
+            color: #ffa500;
+        }
+
+        .btn-custom {
+            background-color: #ffa500;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #181716;
+            color: #fff;
+        }
+
+        .construction-section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 50px 10%;
+            position: relative;
+        }
+
+        /* Card Styles */
+       
+
+        /* Image */
+        .construction-image img {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Content */
+        .construction-content {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .construction-content h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .construction-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .know-more {
+            text-decoration: none;
+            color: #fbb034;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .know-more:hover {
+            color: #d99200;
+        }
+
+        /* Number Styles */
+        
+
+        .construction-number hr {
+            width: 370px;
+            height: 2px;
+            background-color: #fbb034;
+            border: none;
+            margin: 10px 0 0 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .construction-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .construction-number {
+                position: relative;
+                top: auto;
+                right: auto;
+                transform: none;
+                margin: 20px auto;
+                text-align: center;
+            }
+        }
+        /* Number Styles */
+        .construction-number{
+            position: absolute;
+            font-size: 140px;
+            font-weight: bold;
+            color: rgba(255, 204, 102, 0.2);
+            top: 50%;
+            right: 10%; /* Increased spacing */
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .construction-card {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            background: rgba(255, 204, 102, 0.2);;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            margin-right: 382px; /* Added margin to push the card away from the number */
+        }
+
+
+        
+        /* Card Styles */
+       
+
+        /* Image */
+        .construction2-image img {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Content */
+        .construction-content2 {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .construction-content2 h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .construction-content2 p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .know-more {
+            text-decoration: none;
+            color: #fbb034;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .know-more:hover {
+            color: #d99200;
+        }
+
+        /* Number Styles */
+        
+
+        .construction-number2 hr {
+            width: 370px;
+            height: 2px;
+            background-color: #fbb034;
+            border: none;
+            margin: 10px 0 0 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .construction-card2 {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .construction-number2 {
+                position: relative;
+                top: auto;
+                right: auto;
+                transform: none;
+                margin: 20px auto;
+                text-align: center;
+            }
+        }
+        /* Number Styles */
+        /* Construction Section 2 */
+.construction-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 10%;
+    position: relative;
+    margin-left: 20px; /* Added margin-left to shift the section to the right */
+}
+
+/* Number Styles for Section 2 */
+.construction-number2 {
+    position: absolute;
+    font-size: 140px;
+    font-weight: bold;
+    color: rgba(247, 202, 114, 0.522);
+    top: 50%;
+    left: 10%; /* Adjusted to give more space on the left */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left */
+}
+
+/* Card Styles for Section 2 */
+.construction-card2 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: rgba(247, 202, 114, 0.522);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    margin-left: 380px; /* Added margin-left to push the card to the right */
+}
+/* Reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .banner-image {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 300px; /* Adjusted height */
+    overflow: hidden;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(50%); /* Apply black and white effect with reduced brightness */
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-text h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+ /* footer Section starts */
+        .footer {
+        background-color: #000;
+        padding: 40px 20px;
+        color: #fff;
+        }
+
+        .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        }
+
+        /* Logo Section */
+        .footer-logo {
+        flex: 1;
+        margin: 20px;
+        }
+
+        .footer-logo h2 {
+        font-size: 24px;
+        color: #fdb913;
+        }
+
+        .footer-logo span {
+        color: #fff;
+        }
+
+        .footer-logo p {
+        margin-top: 10px;
+        line-height: 1.6;
+        color: #aaa;
+        }
+
+        /* Contact Section */
+        .footer-contact {
+        flex: 1;
+        margin: 20px;
+        }
+
+        .footer-contact h3 {
+        color: #fdb913;
+        }
+
+        .footer-contact p {
+        margin: 10px 0;
+        color: #fff;
+        }
+
+        .footer-contact .app-links img {
+        width: 120px;
+        margin-right: 10px;
+        margin-top: 10px;
+        }
+
+        /* Social Media Section */
+        .footer-social {
+        
+            margin-right: 115px;
+            margin-left: 517px;
+            border-top: 1px solid #333;
+        }
+
+        .footer-social h3 {
+        color: #fdb913;
+        margin-bottom: 10px;
+            margin-left: 22px;
+        }
+
+        .footer-social .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+        }
+
+        .footer-social .social-icons i {
+        font-size: 22px;
+        color: #ffffff;
+        cursor: pointer;
+        }
+
+        .footer-social .social-icons i:hover {
+        color: #ec7710;
+        }
+
+        /* Links Section */
+        .footer-links {
+        display: flex;
+        flex: 2;
+        margin: 20px;
+        justify-content: space-around;
+        }
+
+        .footer-links h3 {
+        color: #fdb913;
+        margin-bottom: 10px;
+        }
+
+        .footer-links ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        .footer-links ul li {
+        margin: 5px 0;
+        color: #aaa;
+        }
+
+        /* Footer Bottom */
+        .container4 {
+        margin-top: 20px;
+        padding-top: 10px;
+        }
+        .footer::before {
+            content: "Aakar Constructions";
+            font-size: 6rem;
+            color: rgba(116, 113, 113, 0.281); /* Light gray for background text */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            white-space: nowrap;
+            font-weight: 700;
+            margin-top: 3000px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-dark py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo text-warning fw-bold">AAKAR CONSTRUCTION</div>
+            <nav class="menu d-flex align-items-center">
+                <a href="index.html" class="mx-2">Home</a>
+                <a href="about.html" class="mx-2">About</a>
+                <a href="Projects.html" class="mx-2">Projects</a>
+                <a href="services.html" class="mx-2" style="color: #ffa500;">Services</a>
+                <a href="contact.html" class="mx-2">Contact</a>
+                <a href="#" class="btn btn-custom ms-3">Get Construction Estimate</a>
+            </nav>
+        </div>
+    </header>
+    <!-- Banner Image Starts -->
+    <div class="banner-image">
+        <img src="./services.png" alt="Connect with Aakar Construction" />
+        <div class="banner-text">
+            <h1>Our <span style="color: #ffa500;">Services</span></h1>
+            <p>Our services cover every phase of construction, from initial planning to final completion, including interior design and
+            maintenance.
+            We ensure quality and attention to detail throughout, delivering precision and excellence in every aspect of your
+            project.</p>
+        </div>
+    </div>
+    <!-- Banner Image Ends -->
+
+    <!-- Construction Section -->
+    <div class="construction-section reveal">
+        <!-- Number 1 -->
+        <div class="construction-number">
+            <span>01</span>
+            <hr>
+        </div>
+        <!-- Card 1 -->
+        <div class="construction-card">
+            <div class="construction-image">
+                <img src="./s1.png" alt="Image of Residential Construction Project">
+            </div>
+            <div class="construction-content">
+                <h2>Residential Construction</h2>
+                <p>
+                    Building Your Dream Home with Aakar Constructions: From Blueprint to Reality. Aakar offers a
+                    comprehensive home construction service that begins with your dream...
+                </p>
+                <a href="#" class="know-more">Know More →</a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="construction-section2 reveal">
+        <!-- Number 2 -->
+        <div class="construction-number2">
+            <span>02</span>
+            <hr>
+        </div>
+        <!-- Card 2 -->
+        <div class="construction-card2">
+            <div class="construction-image2">
+                <img src="./s2.png" alt="Image of Residential Construction Project">
+            </div>
+            <div class="construction-content2">
+                <h2>Commercial Construction</h2>
+                <p>
+                Transforming Business Environments with Aakar Tailored Commercial Spaces for Success. Aakar Constructions understands
+                that the design and construction of commercial spaces...
+                </p>
+                <a href="#" class="know-more">Know More →</a>
+            </div>
+        </div>  
+    </div>
+    </div>
+
+    <div class="construction-section reveal">
+        <!-- Number 1 -->
+        <div class="construction-number">
+            <span>03</span>
+            <hr>
+        </div>
+        <!-- Card 1 -->
+        <div class="construction-card">
+            <div class="construction-image">
+                <img src="./m1.png" alt="Image of Residential Construction Project" style="width: 200px; height: 200px;">
+            </div>
+            <div class="construction-content">
+                <h2>Maintenance</h2>
+                <p>
+                Aakar Constructions: Comprehensive Property Maintenance for Longevity and Performance. Maintaining a property is key to
+                preserving its value and functionality, and Aakar Constructions...
+                </p>
+                <a href="#" class="know-more">Know More →</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="construction-section2 reveal">
+        <!-- Number 2 -->
+        <div class="construction-number2">
+            <span>04</span>
+            <hr>
+        </div>
+        <!-- Card 2 -->
+        <div class="construction-card2">
+            <div class="construction-image2">
+                <img src="./s3.png" alt="Image of Residential Construction Project">
+            </div>
+            <div class="construction-content2">
+                <h2>Interior Design & Planing</h2>
+                <p>
+                    Personalized Interior Design and Renovation with Aakar Constructions: Creating Spaces That Inspire. Aakar offers
+                    comprehensive interior design and renovation...
+
+                </p>
+                <a href="#" class="know-more">Know More →</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="construction-section reveal">
+        <!-- Number 1 -->
+        <div class="construction-number">
+            <span>05</span>
+            <hr>
+        </div>
+        <!-- Card 1 -->
+        <div class="construction-card">
+            <div class="construction-image">
+                <img src="./contractor.png" alt="Image of Residential Construction Project" style="width: 200px; height: 200px;">
+            </div>
+            <div class="construction-content">
+                <h2>Renovations</h2>
+                <p>
+                    Transforming Spaces with Aakar Constructions:  Expert Renovations that Enhance Value and Functionality. Whether you're
+                    modernizing your home, updating your office, or completely transforming... 
+                </p>
+                <a href="#" class="know-more">Know More →</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="construction-section2 reveal">
+        <!-- Number 2 -->
+        <div class="construction-number2">
+            <span>06</span>
+            <hr>
+        </div>
+        <!-- Card 2 -->
+        <div class="construction-card2">
+            <div class="construction-image2">
+                <img src="./arch.png" alt="Image of Residential Construction Project"style="width: 200px; height: 200px;">
+            </div>
+            <div class="construction-content2">
+                <h2>Architectural Plans</h2>
+                <p>
+                    Innovative Design and Engineering Precision with Aakar Constructions: Bridging Creativity and Technical Excellence. At
+                    Aakar, we provide a full range of architecture and engineering services..
+    
+                </p>
+                <a href="#" class="know-more">Know More →</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="construction-section reveal">
+        <!-- Number 1 -->
+        <div class="construction-number">
+            <span>07</span>
+            <hr>
+        </div>
+        <!-- Card 1 -->
+        <div class="construction-card">
+            <div class="construction-image">
+                <img src="./engineering-services.png" alt="Image of Residential Construction Project"
+                    style="width: 200px; height: 200px;">
+            </div>
+            <div class="construction-content">
+                <h2>Engineering Services</h2>
+                <p>
+                    From compact homes to luxurious villas, we cater to all residential needs. Whether you're looking to build a cozy 2BHK
+                    or a sprawling mansion, our team is equipped to handle projects of any scale.
+                </p>
+                <a href="#" class="know-more">Know More →</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="construction-section2 reveal">
+        <!-- Number 2 -->
+        <div class="construction-number2">
+            <span>08</span>
+            <hr>
+        </div>
+        <!-- Card 2 -->
+        <div class="construction-card2">
+            <div class="construction-image2">
+                <img src="./cs.png" alt="Image of Residential Construction Project" style="width: 200px; height: 200px;">
+            </div>
+            <div class="construction-content2">
+                <h2>Contractor Services</h2>
+                <p>
+                    From compact homes to luxurious villas, we cater to all residential needs. Whether you're looking to build a cozy 2BHK
+                    or a sprawling mansion, our team is equipped to handle projects of any scale.
+    
+                </p>
+                <a href="#" class="know-more">Know More →</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer bg-dark" style="margin-top: 15px;">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <h2>Aakar<span>.Constructions</span></h2>
+                <p>Building Homes Simplified</p>
+                <p>
+                    At Aakar Construction, we blend functionality and aesthetics to deliver customized and efficient home
+                    construction,
+                    creating personalized spaces tailored to your lifestyle.
+                </p>
+            </div>
+    
+            <!-- Contact Section -->
+            <div class="footer-contact">
+                <h3>Get In Touch</h3>
+                <p><i class="fas fa-phone-alt"></i> +91-9191919191</p>
+                <p><i class="fas fa-envelope"></i> hello@Aakar.com</p>
+                <div class="app-links">
+                    <img src="images/app-store.png" alt="App Store" />
+                    <img src="images/google-play.png" alt="Google Play" />
+                </div>
+            </div>
+    
+            <!-- Links Section -->
+            <div class="footer-links">
+                <div>
+                    <h3>Home</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Why Us</li>
+                        <li>Our Projects</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div style="margin-left: 29px;">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>Residential Construction</li>
+                        <li>Commercial Construction</li>
+                        <li>Maintenance</li>
+                        <li>Interiors</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Information</h3>
+                    <ul>
+                        <li>Terms & Condition</li>
+                        <li>Privacy Policy</li>
+                        <li>Cancellation Policy</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container4 text-center">
+            <p style="color: white;">&copy; 2024 Aakar Construction. All Rights Reserved.</p>
+            <h6>Designed By <span style="color: #00f7ff;">@ Yash Patil</span></h6>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll('.reveal');
+
+            const revealOnScroll = () => {
+                const scrollPosition = window.innerHeight + window.scrollY;
+                sections.forEach(section => {
+                    if (section.offsetTop + section.offsetHeight <= scrollPosition) {
+                        section.classList.add('active');
+                    }
+                });
+            };
+
+            // Initial check to reveal sections already in view
+            revealOnScroll();
+
+            // Add scroll event listener
+            window.addEventListener('scroll', revealOnScroll);
+        });
+    </script>
+</body>
+
+</html>
